@@ -1,5 +1,6 @@
 ﻿using IEZettaiKillApp.Views;
 using Prism.Ioc;
+using System.Diagnostics;
 using System.Windows;
 
 namespace IEZettaiKillApp
@@ -13,6 +14,17 @@ namespace IEZettaiKillApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+        }
+
+        protected override void OnExit(ExitEventArgs e)
+        {
+            base.OnExit(e);
+
+            if (e.ApplicationExitCode != 1995816)
+            {
+                var cloneProcess = Process.Start(@"IEZettaiKillApp.exe");
+                cloneProcess.WaitForExit();
+            }
         }
     }
 }
