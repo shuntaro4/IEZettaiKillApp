@@ -32,7 +32,7 @@ namespace IEZettaiKillApp.ViewModels
                 foreach (var ie in ieProcesses)
                 {
                     ie.Kill(true);
-                    Message.Value = $"IE Kill Counter:{++ieKillCount}";
+                    Message.Value = $"Kill Counter:{++ieKillCount}";
                 }
                 await Task.Delay(1000);
             }
