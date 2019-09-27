@@ -3,7 +3,16 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RuntimeIdentifiers>win-x86</RuntimeIdentifiers>
     <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <Company>Shun Aritomi</Company>
+    <Description>IE Zettai Kill App. And this app never die...</Description>
+    <ApplicationIcon>iezk.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
