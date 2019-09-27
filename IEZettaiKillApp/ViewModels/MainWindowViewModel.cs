@@ -10,7 +10,9 @@ namespace IEZettaiKillApp.ViewModels
     {
         public ReactiveProperty<string> Title { get; } = new ReactiveProperty<string>("IEZettaiKillApp");
 
-        public ReactiveProperty<string> Message { get; set; } = new ReactiveProperty<string>("IE Kill Counter: 0");
+        public ReactiveProperty<string> StatusMessage { get; } = new ReactiveProperty<string>("IE Process Monitoring...");
+
+        public ReactiveProperty<string> Message { get; } = new ReactiveProperty<string>("Kill Counter: 0");
 
         public ReactiveCommand IEZettaiKillCommand { get; }
 
