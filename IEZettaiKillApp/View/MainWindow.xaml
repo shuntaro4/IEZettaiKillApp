@@ -50,6 +50,7 @@
                 HorizontalAlignment="Center"
                 Background="Transparent"
                 BorderThickness="0"
+                Click="StartStopButton_Click"
                 Command="{Binding IEZettaiKillStartStopCommand}"
                 Content="{Binding StartStopIcon.Value}" />
             <Button

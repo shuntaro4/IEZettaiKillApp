@@ -28,5 +28,11 @@ namespace IEZettaiKillApp.Views
             }
             DragMove();
         }
+
+        private void StartStopButton_Click(object sender, RoutedEventArgs e)
+        {
+            // after clicking the button, clear the focus.
+            Keyboard.ClearFocus();
+        }
     }
 }
