@@ -8,8 +8,8 @@
     xmlns:prism="http://prismlibrary.com/"
     Width="300"
     Height="80"
-    KeyDown="Window_KeyDown"
     prism:ViewModelLocator.AutoWireViewModel="True"
+    KeyDown="Window_KeyDown"
     mc:Ignorable="d">
 
     <i:Interaction.Triggers>
@@ -34,7 +34,6 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <TextBlock
                 Grid.Column="0"
@@ -45,17 +44,6 @@
                 Text="{Binding Title.Value}" />
             <Button
                 Grid.Column="1"
-                Width="24"
-                Height="24"
-                Margin="5,5,5,5"
-                HorizontalAlignment="Center"
-                Background="Transparent"
-                BorderThickness="0"
-                Click="StartStopButton_Click"
-                Command="{Binding IEZettaiKillStartStopCommand}"
-                Content="{Binding StartStopIcon.Value}" />
-            <Button
-                Grid.Column="2"
                 Width="24"
                 Height="24"
                 Margin="5,5,5,5"
