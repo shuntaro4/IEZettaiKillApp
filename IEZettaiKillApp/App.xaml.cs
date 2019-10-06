@@ -1,4 +1,5 @@
-﻿using IEZettaiKillApp.Views;
+﻿using IEZettaiKillApp.Domain;
+using IEZettaiKillApp.Views;
 using Prism.Ioc;
 using System.Diagnostics;
 using System.Windows;
@@ -14,6 +15,7 @@ namespace IEZettaiKillApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IEGuard>();
         }
 
         protected override void OnExit(ExitEventArgs e)

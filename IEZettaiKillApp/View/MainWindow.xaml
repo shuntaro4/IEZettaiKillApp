@@ -9,6 +9,7 @@
     Width="300"
     Height="80"
     prism:ViewModelLocator.AutoWireViewModel="True"
+    ContentRendered="Window_ContentRendered"
     KeyDown="Window_KeyDown"
     mc:Ignorable="d">
 

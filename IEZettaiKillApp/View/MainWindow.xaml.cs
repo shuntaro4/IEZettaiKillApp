@@ -1,10 +1,15 @@
-﻿using System.Windows;
+﻿using IEZettaiKillApp.Domain;
+using System.Windows;
 using System.Windows.Input;
+using Unity;
 
 namespace IEZettaiKillApp.Views
 {
     public partial class MainWindow : Window
     {
+        [Dependency]
+        public IEGuard IEGuard { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -49,6 +54,17 @@ namespace IEZettaiKillApp.Views
         private void Shutdown()
         {
             Application.Current.Shutdown(1995816);
+        }
+
+        private void Window_ContentRendered(object sender, System.EventArgs e)
+        {
+            var isIE = IEGuard.DefaultBrowserIsIE();
+            if (isIE)
+            {
+                MessageBox.Show("Oh...Your default browser is IE.\r\n" +
+                    "You need to change a default browser.\r\n" +
+                    "Because I keep killing IE Process.");
+            }
         }
     }
 }
