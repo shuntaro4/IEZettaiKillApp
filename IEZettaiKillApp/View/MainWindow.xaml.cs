@@ -8,7 +8,7 @@ namespace IEZettaiKillApp.Views
     public partial class MainWindow : Window
     {
         [Dependency]
-        public IEGuard IEGuard { get; set; }
+        public IEKiller IEKiller { get; set; }
 
         public MainWindow()
         {
@@ -58,13 +58,15 @@ namespace IEZettaiKillApp.Views
 
         private void Window_ContentRendered(object sender, System.EventArgs e)
         {
-            var isIE = IEGuard.DefaultBrowserIsIE();
-            if (isIE)
+            var isIE = IEKiller.DefaultWebBrowserIsIE();
+            if (!isIE)
             {
-                MessageBox.Show("Oh...Your default browser is IE.\r\n" +
-                    "You need to change a default browser.\r\n" +
-                    "Because I keep killing IE Process.");
+                return;
             }
+
+            MessageBox.Show("Oh...Your default browser is IE.\r\n" +
+                "You need to change a default browser.\r\n" +
+                "Because I keep killing IE Process.");
         }
     }
 }

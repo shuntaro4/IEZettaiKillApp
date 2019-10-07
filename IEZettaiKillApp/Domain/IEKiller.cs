@@ -2,23 +2,27 @@
 
 namespace IEZettaiKillApp.Domain
 {
-    public class IEGuard
+    public class IEKiller
     {
-        public bool DefaultBrowserIsIE()
+        public bool DefaultWebBrowserIsIE()
         {
-            var name = GetDefaultBrowser();
-            if (name.Contains("IE"))
+            var webBrowser = GetDefaultBrowser();
+            if (webBrowser == WebBrowser.IE)
             {
                 return true;
             }
             return false;
         }
 
-        public string GetDefaultBrowser()
+        public WebBrowser GetDefaultBrowser()
         {
             var subkey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice");
             var name = subkey?.GetValue("ProgId") as string;
-            return name;
+            if (name.Contains("IE"))
+            {
+                return WebBrowser.IE;
+            }
+            return WebBrowser.OTHER;
         }
     }
 }

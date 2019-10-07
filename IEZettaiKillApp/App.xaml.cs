@@ -15,7 +15,7 @@ namespace IEZettaiKillApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.Register<IEGuard>();
+            containerRegistry.Register<IEKiller>();
         }
 
         protected override void OnExit(ExitEventArgs e)
