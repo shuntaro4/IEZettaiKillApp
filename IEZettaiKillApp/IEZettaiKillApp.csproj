@@ -6,14 +6,18 @@
     <RuntimeIdentifiers>win-x86</RuntimeIdentifiers>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
     <Company>Shun Aritomi</Company>
     <Description>IE Zettai Kill App. And this app never die...</Description>
     <ApplicationIcon>iezk.ico</ApplicationIcon>
-    <PackageReleaseNotes>* IEZettaiKillApp 0.0.2 / 1 Oct 2019
+    <PackageReleaseNotes>* IEZettaiKillApp 0.0.3 / 8 Oct 2019
+Improved : add default browser check.
+Improved : change icon file.
+
+* IEZettaiKillApp 0.0.2 / 1 Oct 2019
 Improved : remove start / stop button.
 
 * IEZettaiKillApp 0.0.1 / 28 Sep 2019
