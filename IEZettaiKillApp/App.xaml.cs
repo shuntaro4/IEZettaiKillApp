@@ -23,6 +23,7 @@ namespace IEZettaiKillApp
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.Register<IEKiller>();
+            containerRegistry.Register<RunRegister>();
         }
 
         protected override void OnStartup(StartupEventArgs e)

@@ -10,6 +10,9 @@ namespace IEZettaiKillApp.Views
         [Dependency]
         public IEKiller IEKiller { get; set; }
 
+        [Dependency]
+        public RunRegister RunRegister { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -58,6 +61,8 @@ namespace IEZettaiKillApp.Views
 
         private void Window_ContentRendered(object sender, System.EventArgs e)
         {
+            RunRegister.RegistKey(true);
+
             var isIE = IEKiller.DefaultWebBrowserIsIE();
             if (!isIE)
             {
