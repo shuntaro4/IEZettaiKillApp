@@ -7,14 +7,17 @@
     <PublishSingleFile>true</PublishSingleFile>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
     <Company>Shun Aritomi</Company>
     <Description>IE Zettai Kill App. And this app never die...</Description>
     <ApplicationIcon>iezk.ico</ApplicationIcon>
-    <PackageReleaseNotes>* IEZettaiKillApp 0.0.5 / 11 Oct 2019
+    <PackageReleaseNotes>* IEZettaiKillApp 0.0.6 / 28 Oct 2019
+new : add logic to change auto launch registry key.
+
+* IEZettaiKillApp 0.0.5 / 11 Oct 2019
 Improved : Prohibit multiple launching of apps.
 
 * IEZettaiKillApp 0.0.3 / 8 Oct 2019
@@ -26,8 +29,8 @@ Improved : remove start / stop button.
 
 * IEZettaiKillApp 0.0.1 / 28 Sep 2019
 new : Hello World!!! :)</PackageReleaseNotes>
-    <AssemblyVersion>0.0.5.0</AssemblyVersion>
-    <FileVersion>0.0.5.0</FileVersion>
+    <AssemblyVersion>0.0.6.0</AssemblyVersion>
+    <FileVersion>0.0.6.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
