@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Input;
 using Unity;
 
-namespace IEZettaiKillApp.Views
+namespace IEZettaiKillApp.Presentation.Views
 {
     public partial class MainWindow : Window
     {

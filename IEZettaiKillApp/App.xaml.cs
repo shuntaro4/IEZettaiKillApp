@@ -1,5 +1,5 @@
 ﻿using IEZettaiKillApp.Domain;
-using IEZettaiKillApp.Views;
+using IEZettaiKillApp.Presentation.Views;
 using Prism.Ioc;
 using System.Diagnostics;
 using System.Threading;

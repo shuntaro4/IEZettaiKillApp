@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IEZettaiKillApp.ViewModels
+namespace IEZettaiKillApp.Presentation.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
