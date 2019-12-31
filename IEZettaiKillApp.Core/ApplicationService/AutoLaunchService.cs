@@ -5,11 +5,11 @@ namespace IEZettaiKillApp.Core.ApplicationService
 {
     public class AutoLaunchService : IAutoLaunchService
     {
-        private RunRegister runRegister;
+        private AutoLaunchRegister runRegister;
 
         public AutoLaunchService()
         {
-            runRegister = new RunRegister();
+            runRegister = new AutoLaunchRegister();
         }
 
         public void SetAutoLaunchSetting()

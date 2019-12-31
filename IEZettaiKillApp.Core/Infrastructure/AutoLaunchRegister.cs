@@ -4,13 +4,13 @@ using System.Diagnostics;
 
 namespace IEZettaiKillApp.Core.Infrastructure
 {
-    public class RunRegister
+    public class AutoLaunchRegister
     {
         private static string subKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
 
         private static string valueKey = "IEZettaiKillApp";
 
-        public RunRegister()
+        public AutoLaunchRegister()
         {
         }
 
