@@ -7,7 +7,7 @@
     <PublishSingleFile>true</PublishSingleFile>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>0.0.6</Version>
+    <Version>1.0.0</Version>
     <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
@@ -29,8 +29,8 @@ Improved : remove start / stop button.
 
 * IEZettaiKillApp 0.0.1 / 28 Sep 2019
 new : Hello World!!! :)</PackageReleaseNotes>
-    <AssemblyVersion>0.0.6.0</AssemblyVersion>
-    <FileVersion>0.0.6.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
