@@ -15,7 +15,7 @@
 
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="ContentRendered">
-            <i:InvokeCommandAction Command="{Binding IEZettaiKillCommand}" />
+            <i:InvokeCommandAction Command="{Binding WindowContentRenderedCommand}" />
         </i:EventTrigger>
     </i:Interaction.Triggers>
 

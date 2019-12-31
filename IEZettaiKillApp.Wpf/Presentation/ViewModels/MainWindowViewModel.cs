@@ -18,16 +18,16 @@ namespace IEZettaiKillApp.Presentation.ViewModels
 
         public ReactiveProperty<string> Message { get; } = new ReactiveProperty<string>("Kill Counter: 0");
 
-        public ReactiveCommand IEZettaiKillCommand { get; }
+        public ReactiveCommand WindowContentRenderedCommand { get; }
 
         private int ieKillCount;
 
         public MainWindowViewModel()
         {
-            IEZettaiKillCommand = new ReactiveCommand();
-            IEZettaiKillCommand.Subscribe(IEZettaiKillAction);
+            WindowContentRenderedCommand = new ReactiveCommand();
+            WindowContentRenderedCommand.Subscribe(WindowContentRenderedAction);
         }
-        private async void IEZettaiKillAction()
+        private async void WindowContentRenderedAction()
         {
             while (true)
             {
