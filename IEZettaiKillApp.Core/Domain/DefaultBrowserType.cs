@@ -1,6 +1,6 @@
 ﻿namespace IEZettaiKillApp.Core.Domain
 {
-    public enum WebBrowserType
+    public enum DefaultBrowserType
     {
         IE,
         OTHER

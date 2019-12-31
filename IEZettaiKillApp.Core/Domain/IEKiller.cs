@@ -7,22 +7,22 @@ namespace IEZettaiKillApp.Core.Domain
         public bool DefaultWebBrowserIsIE()
         {
             var webBrowserType = GetDefaultBrowser();
-            if (webBrowserType == WebBrowserType.IE)
+            if (webBrowserType == DefaultBrowserType.IE)
             {
                 return true;
             }
             return false;
         }
 
-        public WebBrowserType GetDefaultBrowser()
+        public DefaultBrowserType GetDefaultBrowser()
         {
             var subkey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice");
             var name = subkey?.GetValue("ProgId") as string;
             if (name.Contains("IE"))
             {
-                return WebBrowserType.IE;
+                return DefaultBrowserType.IE;
             }
-            return WebBrowserType.OTHER;
+            return DefaultBrowserType.OTHER;
         }
     }
 }
