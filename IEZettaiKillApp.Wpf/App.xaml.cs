@@ -24,7 +24,6 @@ namespace IEZettaiKillApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.Register<IEKiller>();
             containerRegistry.Register<RunRegister>();
             containerRegistry.Register<IDefaultBrowserService, DefaultBrowserService>();
         }

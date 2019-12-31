@@ -9,9 +9,6 @@ namespace IEZettaiKillApp.Presentation.Views
     public partial class MainWindow : Window
     {
         [Dependency]
-        public IEKiller IEKiller { get; set; }
-
-        [Dependency]
         public RunRegister RunRegister { get; set; }
 
         [Dependency]
