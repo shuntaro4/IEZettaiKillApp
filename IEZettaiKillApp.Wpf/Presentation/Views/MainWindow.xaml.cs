@@ -1,5 +1,5 @@
 ﻿using IEZettaiKillApp.Core.ApplicationService.Interfaces;
-using IEZettaiKillApp.Core.Domain;
+using IEZettaiKillApp.Core.Infrastructure;
 using System.Windows;
 using System.Windows.Input;
 using Unity;

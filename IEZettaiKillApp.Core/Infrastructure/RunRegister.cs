@@ -2,7 +2,7 @@
 using System;
 using System.Diagnostics;
 
-namespace IEZettaiKillApp.Core.Domain
+namespace IEZettaiKillApp.Core.Infrastructure
 {
     public class RunRegister
     {

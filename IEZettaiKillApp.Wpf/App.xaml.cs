@@ -1,6 +1,6 @@
 ﻿using IEZettaiKillApp.Core.ApplicationService;
 using IEZettaiKillApp.Core.ApplicationService.Interfaces;
-using IEZettaiKillApp.Core.Domain;
+using IEZettaiKillApp.Core.Infrastructure;
 using IEZettaiKillApp.Presentation.Views;
 using Prism.Ioc;
 using System.Diagnostics;
