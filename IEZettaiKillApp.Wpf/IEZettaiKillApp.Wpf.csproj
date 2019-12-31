@@ -17,6 +17,15 @@
     <PackageReleaseNotes></PackageReleaseNotes>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <PackageId>IEZettaiKillApp</PackageId>
+    <Authors>IEZettaiKillApp</Authors>
+    <Product>IEZettaiKillApp</Product>
+    <AssemblyName>IEZettaiKillApp</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
   <ItemGroup>
