@@ -10,6 +10,9 @@ namespace IEZettaiKillApp.Presentation.ViewModels
     public class MainWindowViewModel : BindableBase
     {
         [Dependency]
+        public IAutoLaunchService AutoLaunchService { get; set; }
+
+        [Dependency]
         public IIEZettaiKillService IEZettaiKillService { get; set; }
 
         public ReactiveProperty<string> Title { get; } = new ReactiveProperty<string>("IEZettaiKillApp");
@@ -29,6 +32,8 @@ namespace IEZettaiKillApp.Presentation.ViewModels
         }
         private async void WindowContentRenderedAction()
         {
+            AutoLaunchService.SetAutoLaunchSetting();
+
             while (true)
             {
                 await Task.Delay(1000);
