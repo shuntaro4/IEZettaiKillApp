@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿
+using Prism.Mvvm;
 using Reactive.Bindings;
 using System.Diagnostics;
 using System.Linq;

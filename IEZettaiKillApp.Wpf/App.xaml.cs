@@ -1,4 +1,4 @@
-﻿using IEZettaiKillApp.Domain;
+﻿using IEZettaiKillApp.Core.Domain;
 using IEZettaiKillApp.Presentation.Views;
 using Prism.Ioc;
 using System.Diagnostics;

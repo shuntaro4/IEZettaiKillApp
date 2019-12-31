@@ -1,4 +1,4 @@
-﻿namespace IEZettaiKillApp.Domain
+﻿namespace IEZettaiKillApp.Core.Domain
 {
     public enum WebBrowserType
     {

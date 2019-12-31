@@ -1,6 +1,6 @@
 ﻿using Microsoft.Win32;
 
-namespace IEZettaiKillApp.Domain
+namespace IEZettaiKillApp.Core.Domain
 {
     public class IEKiller
     {

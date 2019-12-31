@@ -1,4 +1,4 @@
-﻿using IEZettaiKillApp.Domain;
+﻿using IEZettaiKillApp.Core.Domain;
 using System.Windows;
 using System.Windows.Input;
 using Unity;
