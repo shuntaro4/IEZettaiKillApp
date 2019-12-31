@@ -12,6 +12,9 @@ namespace IEZettaiKillApp.Presentation.Views
         public RunRegister RunRegister { get; set; }
 
         [Dependency]
+        public IAutoLaunchService AutoLaunchService { get; set; }
+
+        [Dependency]
         public IDefaultBrowserService DefaultBrowserService { get; set; }
 
         public MainWindow()
@@ -62,7 +65,7 @@ namespace IEZettaiKillApp.Presentation.Views
 
         private void Window_ContentRendered(object sender, System.EventArgs e)
         {
-            RunRegister.RegistKey(true);
+            AutoLaunchService.SetAutoLaunchSetting();
 
             if (!DefaultBrowserService.IsIE())
             {
