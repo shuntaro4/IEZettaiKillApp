@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace IEZettaiKillApp.Core.Infrastructure
 {
-    public class AutoLaunchRegister
+    internal class AutoLaunchRegister
     {
         private static string subKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
 
