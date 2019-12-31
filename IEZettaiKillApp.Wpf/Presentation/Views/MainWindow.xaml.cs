@@ -1,4 +1,5 @@
-﻿using IEZettaiKillApp.Core.Domain;
+﻿using IEZettaiKillApp.Core.ApplicationService.Interfaces;
+using IEZettaiKillApp.Core.Domain;
 using System.Windows;
 using System.Windows.Input;
 using Unity;
@@ -12,6 +13,9 @@ namespace IEZettaiKillApp.Presentation.Views
 
         [Dependency]
         public RunRegister RunRegister { get; set; }
+
+        [Dependency]
+        public IDefaultBrowserService DefaultBrowserService { get; set; }
 
         public MainWindow()
         {
@@ -63,8 +67,7 @@ namespace IEZettaiKillApp.Presentation.Views
         {
             RunRegister.RegistKey(true);
 
-            var isIE = IEKiller.DefaultWebBrowserIsIE();
-            if (!isIE)
+            if (!DefaultBrowserService.IsIE())
             {
                 return;
             }

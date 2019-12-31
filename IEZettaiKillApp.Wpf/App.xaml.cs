@@ -1,4 +1,6 @@
-﻿using IEZettaiKillApp.Core.Domain;
+﻿using IEZettaiKillApp.Core.ApplicationService;
+using IEZettaiKillApp.Core.ApplicationService.Interfaces;
+using IEZettaiKillApp.Core.Domain;
 using IEZettaiKillApp.Presentation.Views;
 using Prism.Ioc;
 using System.Diagnostics;
@@ -24,6 +26,7 @@ namespace IEZettaiKillApp
         {
             containerRegistry.Register<IEKiller>();
             containerRegistry.Register<RunRegister>();
+            containerRegistry.Register<IDefaultBrowserService, DefaultBrowserService>();
         }
 
         protected override void OnStartup(StartupEventArgs e)
