@@ -14,21 +14,7 @@
     <Company>Shun Aritomi</Company>
     <Description>IE Zettai Kill App. And this app never die...</Description>
     <ApplicationIcon>iezk.ico</ApplicationIcon>
-    <PackageReleaseNotes>* IEZettaiKillApp 0.0.6 / 28 Oct 2019
-new : add logic to change auto launch registry key.
-
-* IEZettaiKillApp 0.0.5 / 11 Oct 2019
-Improved : Prohibit multiple launching of apps.
-
-* IEZettaiKillApp 0.0.3 / 8 Oct 2019
-Improved : add default browser check.
-Improved : change icon file.
-
-* IEZettaiKillApp 0.0.2 / 1 Oct 2019
-Improved : remove start / stop button.
-
-* IEZettaiKillApp 0.0.1 / 28 Sep 2019
-new : Hello World!!! :)</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
