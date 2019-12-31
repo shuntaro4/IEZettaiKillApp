@@ -1,14 +1,17 @@
 ﻿
+using IEZettaiKillApp.Core.ApplicationService.Interfaces;
 using Prism.Mvvm;
 using Reactive.Bindings;
-using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
+using Unity;
 
 namespace IEZettaiKillApp.Presentation.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
+        [Dependency]
+        public IIEZettaiKillService IEZettaiKillService { get; set; }
+
         public ReactiveProperty<string> Title { get; } = new ReactiveProperty<string>("IEZettaiKillApp");
 
         public ReactiveProperty<string> StatusMessage { get; } = new ReactiveProperty<string>("IE Process Monitoring...");
@@ -30,13 +33,8 @@ namespace IEZettaiKillApp.Presentation.ViewModels
             {
                 await Task.Delay(1000);
 
-                var processes = Process.GetProcesses();
-                var ieProcesses = processes.Where(x => x.ProcessName.Contains("iexplore"));
-                foreach (var ie in ieProcesses)
-                {
-                    ie.Kill(true);
-                    Message.Value = $"Kill Counter:{++ieKillCount}";
-                }
+                ieKillCount += IEZettaiKillService.KillIEProcesses();
+                Message.Value = $"Kill Counter: {ieKillCount}";
             }
         }
     }

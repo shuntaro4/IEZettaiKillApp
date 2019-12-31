@@ -25,6 +25,7 @@ namespace IEZettaiKillApp
         {
             containerRegistry.Register<IDefaultBrowserService, DefaultBrowserService>();
             containerRegistry.Register<IAutoLaunchService, AutoLaunchService>();
+            containerRegistry.Register<IIEZettaiKillService, IEZettaiKillService>();
         }
 
         protected override void OnStartup(StartupEventArgs e)
