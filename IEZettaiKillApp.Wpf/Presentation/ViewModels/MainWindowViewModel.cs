@@ -3,6 +3,7 @@ using IEZettaiKillApp.Core.ApplicationService.Interfaces;
 using Prism.Mvvm;
 using Reactive.Bindings;
 using System.Threading.Tasks;
+using System.Windows;
 using Unity;
 
 namespace IEZettaiKillApp.Presentation.ViewModels
@@ -14,6 +15,9 @@ namespace IEZettaiKillApp.Presentation.ViewModels
 
         [Dependency]
         public IIEZettaiKillService IEZettaiKillService { get; set; }
+
+        [Dependency]
+        public IDefaultBrowserService DefaultBrowserService { get; set; }
 
         public ReactiveProperty<string> Title { get; } = new ReactiveProperty<string>("IEZettaiKillApp");
 
@@ -33,6 +37,13 @@ namespace IEZettaiKillApp.Presentation.ViewModels
         private async void WindowContentRenderedAction()
         {
             AutoLaunchService.SetAutoLaunchSetting();
+
+            if (DefaultBrowserService.IsIE())
+            {
+                MessageBox.Show("Oh...Your default browser is IE.\r\n" +
+                    "You need to change a default browser.\r\n" +
+                    "Because I keep killing IE Process.");
+            }
 
             while (true)
             {
