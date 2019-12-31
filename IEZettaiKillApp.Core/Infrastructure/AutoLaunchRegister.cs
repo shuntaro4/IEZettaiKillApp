@@ -2,15 +2,15 @@
 using System;
 using System.Diagnostics;
 
-namespace IEZettaiKillApp.Domain
+namespace IEZettaiKillApp.Core.Infrastructure
 {
-    public class RunRegister
+    internal class AutoLaunchRegister
     {
         private static string subKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
 
         private static string valueKey = "IEZettaiKillApp";
 
-        public RunRegister()
+        public AutoLaunchRegister()
         {
         }
 

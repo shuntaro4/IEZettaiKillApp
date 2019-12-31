@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <Company>Shun Aritomi</Company>
+    <Description>IE Zettai Kill App. And this app never die...</Description>
+    <ApplicationIcon>iezk.ico</ApplicationIcon>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.0.0-alpha0660" />
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
+    <PackageReference Include="ReactiveProperty" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IEZettaiKillApp.Core\IEZettaiKillApp.Core.csproj" />
+  </ItemGroup>
+
+</Project>
