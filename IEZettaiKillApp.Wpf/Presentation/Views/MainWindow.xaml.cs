@@ -1,5 +1,4 @@
 ﻿using IEZettaiKillApp.Core.ApplicationService.Interfaces;
-using IEZettaiKillApp.Core.Infrastructure;
 using System.Windows;
 using System.Windows.Input;
 using Unity;
@@ -8,9 +7,6 @@ namespace IEZettaiKillApp.Presentation.Views
 {
     public partial class MainWindow : Window
     {
-        [Dependency]
-        public RunRegister RunRegister { get; set; }
-
         [Dependency]
         public IAutoLaunchService AutoLaunchService { get; set; }
 
