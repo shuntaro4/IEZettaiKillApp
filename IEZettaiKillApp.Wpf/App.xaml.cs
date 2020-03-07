@@ -1,5 +1,7 @@
 ﻿using IEZettaiKillApp.Core.ApplicationService;
 using IEZettaiKillApp.Core.ApplicationService.Interfaces;
+using IEZettaiKillApp.Core.Domain;
+using IEZettaiKillApp.Core.Infrastructure;
 using IEZettaiKillApp.Presentation.Views;
 using Prism.Ioc;
 using System.Diagnostics;
@@ -23,9 +25,14 @@ namespace IEZettaiKillApp
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            // IEZettaiKillApp.Core
+            // ApplicationService
             containerRegistry.Register<IDefaultBrowserService, DefaultBrowserService>();
             containerRegistry.Register<IAutoLaunchService, AutoLaunchService>();
             containerRegistry.Register<IIEZettaiKillService, IEZettaiKillService>();
+            containerRegistry.Register<IScreenInfoService, ScreenInfoService>();
+            // Domain
+            containerRegistry.Register<IScreenInfoHelper, ScreenInfoHelper>();
         }
 
         protected override void OnStartup(StartupEventArgs e)
