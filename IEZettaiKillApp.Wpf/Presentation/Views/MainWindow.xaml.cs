@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 using System.Windows.Input;
 
 namespace IEZettaiKillApp.Presentation.Views
@@ -49,6 +50,12 @@ namespace IEZettaiKillApp.Presentation.Views
         private void Shutdown()
         {
             Application.Current.Shutdown(1995816);
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            var url = e.Uri.ToString().Replace("&", "^&");
+            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}"));
         }
     }
 }

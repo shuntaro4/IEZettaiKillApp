@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
     Width="300"
-    Height="80"
+    Height="105"
     prism:ViewModelLocator.AutoWireViewModel="True"
     KeyDown="Window_KeyDown"
     mc:Ignorable="d">
@@ -20,6 +20,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -65,5 +66,18 @@
             VerticalAlignment="Center"
             Foreground="White"
             Text="{Binding Message.Value}" />
+        <TextBlock
+            Grid.Row="3"
+            Padding="0,10,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="11"
+            Foreground="White">
+            <Run Text="You can download the cool new Edge Browser" />
+            <Hyperlink NavigateUri="https://www.microsoft.com/en-us/edge" RequestNavigate="Hyperlink_RequestNavigate">
+                here
+            </Hyperlink>
+            <Run Text="!" />
+        </TextBlock>
     </Grid>
 </Window>
