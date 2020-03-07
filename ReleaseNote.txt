@@ -1,3 +1,6 @@
+## IEZettaiKillApp 1.0.1 / 7 Mar 2020
+- Improved : add new Edge browser link.
+
 ## IEZettaiKillApp 1.0.1 / 1 Jan 2020
 - Fix : fixed exe file name.
 
