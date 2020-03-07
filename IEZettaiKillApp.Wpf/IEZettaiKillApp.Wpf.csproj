@@ -7,7 +7,7 @@
     <PublishSingleFile>true</PublishSingleFile>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
@@ -15,8 +15,8 @@
     <Description>IE Zettai Kill App. And this app never die...</Description>
     <ApplicationIcon>iezk.ico</ApplicationIcon>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <PackageId>IEZettaiKillApp</PackageId>
     <Authors>IEZettaiKillApp</Authors>
     <Product>IEZettaiKillApp</Product>
