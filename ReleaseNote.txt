@@ -1,5 +1,8 @@
-## IEZettaiKillApp 1.0.1 / 7 Mar 2020
-- Improved : add new Edge browser link.
+## IEZettaiKillApp 1.0.3 / 7 Mar 2020
+- Improved : updated app start up location.
+
+## IEZettaiKillApp 1.0.2 / 7 Mar 2020
+- Improved : added new Edge browser link.
 
 ## IEZettaiKillApp 1.0.1 / 1 Jan 2020
 - Fix : fixed exe file name.
@@ -8,17 +11,17 @@
 - re-modeling new app released!!! :)
 
 ## IEZettaiKillApp 0.0.6 / 28 Oct 2019
-- new : add logic to change auto launch registry key.
+- new : added logic to change auto launch registry key.
 
 ## IEZettaiKillApp 0.0.5 / 11 Oct 2019
 - Improved : Prohibit multiple launching of apps.
 
 ## IEZettaiKillApp 0.0.3 / 8 Oct 2019
-- Improved : add default browser check.
-- Improved : change icon file.
+- Improved : added default browser check.
+- Improved : changed icon file.
 
 ## IEZettaiKillApp 0.0.2 / 1 Oct 2019
-- Improved : remove start / stop button.
+- Improved : removed start / stop button.
 
 ## IEZettaiKillApp 0.0.1 / 28 Sep 2019
 - new : Hello World!!! :)
