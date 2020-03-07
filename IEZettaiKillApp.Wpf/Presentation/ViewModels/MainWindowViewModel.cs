@@ -1,5 +1,6 @@
 ﻿
 using IEZettaiKillApp.Core.ApplicationService.Interfaces;
+using IEZettaiKillApp.Core.Domain;
 using Prism.Mvvm;
 using Reactive.Bindings;
 using System.Threading.Tasks;
@@ -19,6 +20,9 @@ namespace IEZettaiKillApp.Presentation.ViewModels
         [Dependency]
         public IDefaultBrowserService DefaultBrowserService { get; set; }
 
+        [Dependency]
+        public IScreenInfoService ScreenInfoService { get; set; }
+
         public ReactiveProperty<string> Title { get; } = new ReactiveProperty<string>("IEZettaiKillApp");
 
         public ReactiveProperty<string> StatusMessage { get; } = new ReactiveProperty<string>("IE Process Monitoring...");
@@ -34,6 +38,12 @@ namespace IEZettaiKillApp.Presentation.ViewModels
             WindowContentRenderedCommand = new ReactiveCommand();
             WindowContentRenderedCommand.Subscribe(WindowContentRenderedAction);
         }
+
+        public ScreenInfo GetPrimaryScreenInfo()
+        {
+            return ScreenInfoService.GetPrimaryScreenInfo();
+        }
+
         private async void WindowContentRenderedAction()
         {
             AutoLaunchService.SetAutoLaunchSetting();

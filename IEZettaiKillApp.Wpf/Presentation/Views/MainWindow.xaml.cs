@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using IEZettaiKillApp.Presentation.ViewModels;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
 
@@ -10,10 +11,14 @@ namespace IEZettaiKillApp.Presentation.Views
         {
             InitializeComponent();
 
-            WindowStartupLocation = WindowStartupLocation.CenterScreen;
             Topmost = true;
             WindowStyle = WindowStyle.None;
             AllowsTransparency = true;
+
+            var viewModel = DataContext as MainWindowViewModel;
+            var primaryScreenInfo = viewModel.GetPrimaryScreenInfo();
+            Left = (primaryScreenInfo.Right / primaryScreenInfo.DisplayScale) - (400 / primaryScreenInfo.DisplayScale);
+            Top = (primaryScreenInfo.Top / primaryScreenInfo.DisplayScale) + (50 / primaryScreenInfo.DisplayScale);
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
