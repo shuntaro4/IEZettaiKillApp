@@ -1,3 +1,6 @@
+## 1.1.0 / 7 June 2021
+- Improved : .NET 5!!!
+
 ## 1.0.3 / 7 Mar 2020
 - Improved : updated app start up location.
 
