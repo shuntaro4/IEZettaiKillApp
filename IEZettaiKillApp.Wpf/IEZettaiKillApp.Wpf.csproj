@@ -1,13 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <PublishSingleFile>true</PublishSingleFile>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.1.0</Version>
     <PackageProjectUrl>https://github.com/shuntaro4/IEZettaiKillApp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/shuntaro4/IEZettaiKillApp</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
@@ -15,8 +15,8 @@
     <Description>IE Zettai Kill App. And this app never die...</Description>
     <ApplicationIcon>iezk.ico</ApplicationIcon>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <PackageId>IEZettaiKillApp</PackageId>
     <Authors>IEZettaiKillApp</Authors>
     <Product>IEZettaiKillApp</Product>
