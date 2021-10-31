@@ -17,7 +17,7 @@ namespace IEZettaiKillApp.Presentation.Views
 
             var viewModel = DataContext as MainWindowViewModel;
             var primaryScreenInfo = viewModel.GetPrimaryScreenInfo();
-            Left = (primaryScreenInfo.Right / primaryScreenInfo.DisplayScale) - (400 / primaryScreenInfo.DisplayScale);
+            Left = 50 / primaryScreenInfo.DisplayScale;
             Top = (primaryScreenInfo.Top / primaryScreenInfo.DisplayScale) + (50 / primaryScreenInfo.DisplayScale);
         }
 
