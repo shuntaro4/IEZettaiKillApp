@@ -14,6 +14,7 @@ namespace IEZettaiKillApp.Core.ApplicationService
             {
                 ieProcess.Kill();
                 killCount++;
+                SystemSound.Beep();
             }
             return killCount;
         }
