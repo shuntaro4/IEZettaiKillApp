@@ -1,6 +1,8 @@
-﻿namespace IEZettaiKillApp.Core.Infrastructure
+﻿using IEZettaiKillApp.Core.Infrastructure.Interfaces;
+
+namespace IEZettaiKillApp.Core.Infrastructure
 {
-    public class SystemSound
+    public class SystemSound : ISystemSound
     {
         public enum MessageBeepType : int
         {
@@ -14,7 +16,7 @@
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern int MessageBeep(MessageBeepType uType);
-        public static void Beep()
+        public void Beep()
         {
             try
             {
