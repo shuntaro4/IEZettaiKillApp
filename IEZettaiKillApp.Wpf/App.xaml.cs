@@ -2,6 +2,7 @@
 using IEZettaiKillApp.Core.ApplicationService.Interfaces;
 using IEZettaiKillApp.Core.Domain;
 using IEZettaiKillApp.Core.Infrastructure;
+using IEZettaiKillApp.Core.Infrastructure.Interfaces;
 using IEZettaiKillApp.Presentation.Views;
 using Prism.Ioc;
 using System.Diagnostics;
@@ -33,6 +34,10 @@ namespace IEZettaiKillApp
             containerRegistry.Register<IScreenInfoService, ScreenInfoService>();
             // Domain
             containerRegistry.Register<IScreenInfoHelper, ScreenInfoHelper>();
+            // Infrastructure
+            containerRegistry.Register<IIEZettaiProcess, IEZettaiProcess>();
+            containerRegistry.Register<IProcessFinder, ProcessFinder>();
+            containerRegistry.Register<ISystemSound, SystemSound>();
         }
 
         protected override void OnStartup(StartupEventArgs e)
